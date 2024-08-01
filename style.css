@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: rgb(236, 97, 97);
+    text-decoration: underline;
+    font-weight: bold;
+}
+body, html{
+    overflow-x: hidden;
+}
+/*Navbar*/
+.navbar{
+    position:absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    text-align: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(246, 89, 89);
+    margin:10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.lmore{
+    padding: 8px 15px;
+    background-color: rgb(228, 66, 66);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*-Events-*/
+section{
+    width:80%;
+    margin: 80px auto;
+}
+.title{
+    font-size: 4vmin;
+    text-align: center;
+    color: rgb(70, 70, 248);
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(236, 243, 243);
+}
+.row .col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    width: 80%;
+}
+.Events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: rgb(199, 28, 199);
+    margin: 20px auto;
+}
+p{
+    color:rgb(94, 8, 175);
+    padding: 0 40px;
+}
+.Events .lmore{
+    margin-top: 10px;
+    padding: 5px;
+
+}
+.Explore{
+    width: 80%;
+    height: 100vh;
+    background-image: url(events.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: white;
+}
+.explore-content .lmore{
+   margin-top: 40px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.tours .row .col{
+    width: 50%;
+}
+.tours .img-galary{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.img-galary img{
+   max-width: 300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: rgb(75, 75, 173);
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .lmore{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(53, 50, 50);
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+/*---mobile devive---*/
+@media only screen and(max-width:850px){
+   
+   .menu-btn{
+    display: block;
+   } .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left:30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(190, 242, 207);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    /*-row-*/
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    /*explore*/
+    .explore-content{
+        width: 100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .img-galary{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-galary img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+/*-animatons-*/
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.lmore:hover{
+    background-color: whitesmoke;
+    color: rgb(225, 12, 83);
+    box-shadow: 2px 2px 5px black;
+}
+li:hover{
+    color: rgb(230, 34, 67);
+    cursor: zoom-out;
+}
